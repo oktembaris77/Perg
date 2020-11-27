@@ -1,0 +1,12 @@
+[submodule "Perg/vender/spdlog"]
+	path = Perg/vender/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "glfw"]
+	path = glfw
+	url = https://github.com/oktembaris77/glfw
+[submodule "Perg/vendor/GLFW"]
+	path = Perg/vendor/GLFW
+	url = https://github.com/oktembaris77/glfw
+[submodule "Perg/vendor/imgui"]
+	path = Perg/vendor/imgui
+	url = https://github.com/oktembaris77/imgui

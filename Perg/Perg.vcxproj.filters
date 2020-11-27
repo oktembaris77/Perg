@@ -1,36 +1,102 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Kaynak Dosyalar">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Perg">
+      <UniqueIdentifier>{93AA8A7C-7FE1-8B0D-28CE-711014E4070F}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Üst Bilgi Dosyaları">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Perg\Core">
+      <UniqueIdentifier>{CB6224CA-37CD-D840-800B-8AE6ECB4B695}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Kaynak Dosyaları">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Perg\Events">
+      <UniqueIdentifier>{1753EAE9-8308-63DF-0CFD-5CB678B159E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Perg\ImGui">
+      <UniqueIdentifier>{FD811B0F-E939-5D5C-5241-36B83E18F84C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Perg\Core.h">
-      <Filter>Üst Bilgi Dosyaları</Filter>
-    </ClInclude>
+    <ClInclude Include="src\Perg.h" />
     <ClInclude Include="src\Perg\Application.h">
-      <Filter>Üst Bilgi Dosyaları</Filter>
+      <Filter>Perg</Filter>
     </ClInclude>
-    <ClInclude Include="src\Perg.h">
-      <Filter>Üst Bilgi Dosyaları</Filter>
+    <ClInclude Include="src\Perg\Core.h">
+      <Filter>Perg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Perg\Core\KeyCodes.h">
+      <Filter>Perg\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Perg\Core\MouseCodes.h">
+      <Filter>Perg\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Perg\EntryPoint.h">
-      <Filter>Üst Bilgi Dosyaları</Filter>
+      <Filter>Perg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Perg\Events\ApplicationEvent.h">
+      <Filter>Perg\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Perg\Events\Event.h">
+      <Filter>Perg\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Perg\Events\KeyEvent.h">
+      <Filter>Perg\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Perg\Events\MouseEvent.h">
+      <Filter>Perg\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Perg\ImGui\ImGuiLayer.h">
+      <Filter>Perg\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Perg\Layer.h">
+      <Filter>Perg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Perg\LayerStack.h">
+      <Filter>Perg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Perg\Log.h">
+      <Filter>Perg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Perg\Window.h">
+      <Filter>Perg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pepch.h" />
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Perg\Application.cpp">
-      <Filter>Kaynak Dosyalar</Filter>
+      <Filter>Perg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Perg\ImGui\ImGuiLayer.cpp">
+      <Filter>Perg\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Perg\Layer.cpp">
+      <Filter>Perg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Perg\LayerStack.cpp">
+      <Filter>Perg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Perg\Log.cpp">
+      <Filter>Perg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pepch.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
