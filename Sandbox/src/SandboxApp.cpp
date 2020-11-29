@@ -4,19 +4,27 @@ class ExampleLayer : public Perg::Layer
 {
 public:
 	ExampleLayer()
-		:Layer("Exaple")
+		:Layer("Example")
 	{
-
 	}
 
 	void OnUpdate() override
 	{
-		PE_INFO("ExapleLayer::Update");
+		if (Perg::Input::IsKeyPressed(PE_KEY_TAB))
+		{
+			PE_TRACE("Tab key is pressed");
+		}
 	}
 
 	void OnEvent(Perg::Event& event) override
 	{
-		PE_TRACE("{0}", event);
+		//PE_TRACE("{0}", event);
+
+		if (event.GetEventType() == Perg::EventType::KeyPressed)
+		{
+			Perg::KeyPressedEvent& e = (Perg::KeyPressedEvent&)event;
+			PE_TRACE("{0}", (char)e.GetKeyCode());
+		}
 	}
 };
 

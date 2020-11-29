@@ -16,6 +16,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Perg/vendor/GLFW/include"
 IncludeDir["Glad"] = "Perg/vendor/Glad/include"
 IncludeDir["ImGui"] = "Perg/vendor/imgui"
+IncludeDir["glm"] = "Perg/vendor/glm"
 
 include "Perg/vendor/GLFW"
 include "Perg/vendor/Glad"
@@ -38,6 +39,8 @@ project "Perg"
 	{
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/***.hpp",
+		"%{prj.name}/vendor/glm/glm/***.inl"
 	}
 
 	includedirs
@@ -47,6 +50,7 @@ project "Perg"
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
 		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
@@ -100,13 +104,14 @@ project "Sandbox"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
 	}
 
 	includedirs
 	{
 		"Perg/vendor/spdlog/include",
 		"Perg/src",
+		"%{IncludeDir.glm}"
 	}
 
 	links
