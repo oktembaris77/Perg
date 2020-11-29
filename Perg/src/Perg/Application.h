@@ -7,6 +7,8 @@
 #include "Perg/Events/Event.h"
 #include "Perg/Events/ApplicationEvent.h"
 
+#include "Perg/ImGui/ImGuiLayer.h"
+
 namespace Perg {
 	class PERG_API Application
 	{
@@ -28,6 +30,7 @@ namespace Perg {
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:

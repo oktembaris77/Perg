@@ -9,7 +9,7 @@
 	url = https://github.com/oktembaris77/glfw
 [submodule "Perg/vendor/imgui"]
 	path = Perg/vendor/imgui
-	url = https://github.com/oktembaris77/imgui
+	url = https://github.com/oktembaris77/imgui/tree/docking
 [submodule "Perg/vendor/glm"]
 	path = Perg/vendor/glm
 	url = https://github.com/g-truc/glm

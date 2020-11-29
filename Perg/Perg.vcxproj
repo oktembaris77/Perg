@@ -165,7 +165,6 @@
     <ClInclude Include="src\Perg\LayerStack.h" />
     <ClInclude Include="src\Perg\Log.h" />
     <ClInclude Include="src\Perg\Window.h" />
-    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\pepch.h" />
@@ -583,11 +582,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Perg\Application.cpp" />
+    <ClCompile Include="src\Perg\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Perg\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Perg\Layer.cpp" />
     <ClCompile Include="src\Perg\LayerStack.cpp" />
     <ClCompile Include="src\Perg\Log.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\pepch.cpp">
