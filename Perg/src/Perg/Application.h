@@ -10,7 +10,7 @@
 #include "Perg/ImGui/ImGuiLayer.h"
 
 namespace Perg {
-	class PERG_API Application
+	class Application
 	{
 	public:
 		Application();

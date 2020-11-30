@@ -1,11 +1,15 @@
 #pragma once
 
 #ifdef PE_PLATFORM_WINDOWS
+#if PE_DYNAMIC_LINK
 	#ifdef PE_BUILD_DLL
 		#define PERG_API __declspec(dllexport)
 	#else
 		#define PERG_API __declspec(dllimport)
 	#endif
+#else
+	#define PERG_API
+#endif
 #else
 	#error Perg only supports Windows!
 #endif

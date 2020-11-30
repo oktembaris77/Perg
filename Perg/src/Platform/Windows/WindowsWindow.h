@@ -1,8 +1,10 @@
 #pragma once
 
 #include "Perg/Window.h"
+#include "Perg/Renderer/GraphicsContext.h"
 
 #include <GLFW/glfw3.h>
+
 
 namespace Perg {
 
@@ -28,6 +30,7 @@ namespace Perg {
 		virtual void Shutdown();
 	private:
 		GLFWwindow* m_Window;
+		GraphicsContext* m_Context;
 		//Scope<GraphicsContext> m_Context;
 
 		struct WindowData

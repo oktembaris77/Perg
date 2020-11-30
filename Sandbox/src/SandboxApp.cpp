@@ -1,5 +1,7 @@
 #include <Perg.h>
 
+#include "../imgui/imgui.h"
+
 class ExampleLayer : public Perg::Layer
 {
 public:
@@ -14,6 +16,13 @@ public:
 		{
 			PE_TRACE("Tab key is pressed");
 		}
+	}
+
+	virtual void OnImGuiRender() override
+	{
+		ImGui::Begin("test");
+		ImGui::Text("Sa");
+		ImGui::End();
 	}
 
 	void OnEvent(Perg::Event& event) override
