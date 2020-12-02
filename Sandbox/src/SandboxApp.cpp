@@ -20,8 +20,11 @@ public:
 
 	virtual void OnImGuiRender() override
 	{
-		ImGui::Begin("test");
-		ImGui::Text("Sa");
+		
+		ImGui::Begin("Stats");
+
+		ImGui::Text("Renderer2D Stats:");
+
 		ImGui::End();
 	}
 
