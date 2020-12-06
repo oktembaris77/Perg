@@ -18,9 +18,9 @@ namespace Perg {
 		PE_CORE_ASSERT(status, "Failed to initialize Glad!");
 
 		PE_CORE_INFO("OpenGL Info:");
-		PE_CORE_INFO("   Vendor: {0}", glGetString(GL_VENDOR));
-		PE_CORE_INFO("   Renderer: {0}", glGetString(GL_RENDERER));
-		PE_CORE_INFO("   Version: {0}", glGetString(GL_VERSION));
+		PE_CORE_INFO("  Vendor: {0}", glGetString(GL_VENDOR));
+		PE_CORE_INFO("  Renderer: {0}", glGetString(GL_RENDERER));
+		PE_CORE_INFO("  Version: {0}", glGetString(GL_VERSION));
 	}
 	void OpenGLContext::SwapBuffers()
 	{

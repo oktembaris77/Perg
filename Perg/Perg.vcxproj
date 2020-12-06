@@ -156,6 +156,7 @@
     <ClInclude Include="src\Perg\LayerStack.h" />
     <ClInclude Include="src\Perg\Log.h" />
     <ClInclude Include="src\Perg\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Perg\Renderer\Shader.h" />
     <ClInclude Include="src\Perg\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
@@ -580,6 +581,7 @@
     <ClCompile Include="src\Perg\Layer.cpp" />
     <ClCompile Include="src\Perg\LayerStack.cpp" />
     <ClCompile Include="src\Perg\Log.cpp" />
+    <ClCompile Include="src\Perg\Renderer\Shader.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
