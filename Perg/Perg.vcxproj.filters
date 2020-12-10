@@ -1338,6 +1338,9 @@
     <ClInclude Include="src\Perg\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\Perg\Renderer\Shader.h" />
+    <ClInclude Include="src\Perg\Renderer\Buffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
+    <ClInclude Include="src\Perg\Renderer\Renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Perg\Application.cpp">
@@ -1369,5 +1372,8 @@
     </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\Perg\Renderer\Shader.cpp" />
+    <ClCompile Include="src\Perg\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
+    <ClCompile Include="src\Perg\Renderer\Renderer.cpp" />
   </ItemGroup>
 </Project>
